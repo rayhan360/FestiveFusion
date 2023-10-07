@@ -1,0 +1,147 @@
+[
+    {
+      "id": 1,
+      "name": "Pahela Boisakh",
+      "img": "https://i.ibb.co/2cbDhLD/5046566.jpg",
+      "short_description": "Embrace Bengali New Year with our event services – traditional decor, cultural performances, and delectable cuisine.",
+      "long_description": "Experience the vibrant spirit of Pahela Baishakh (Bengali New Year) with our event services. We offer meticulous planning, traditional decor that captures the essence of Bengali culture, captivating cultural performances, and a delightful spread of authentic Bengali cuisine. Celebrate this auspicious occasion in style and create lasting memories with us.",
+      "price": 2000,
+      "services_offered": [
+        "Event Planning and Coordination",
+        "Venue Selection and Setup",
+        "Thematic Decor and Lighting",
+        "Live Music and Dance Performances",
+        "Catering Services",
+        "Fireworks Display"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Pahela Falgun",
+      "img": "https://i.ibb.co/P9w8cct/pohela-falgun.jpg",
+      "short_description": "Create a vibrant Pahela Falgun celebration with our event planning services. Colorful decor, cultural performances, and more!",
+      "long_description": "Elevate your Pahela Falgun celebration with our comprehensive event planning services. We'll transform your venue into a burst of vibrant colors, incorporating traditional floral motifs and cultural decor. Enjoy lively performances of Bengali music, dance, and poetry, creating an authentic ambiance. Savor mouthwatering Bengali cuisine and engage in interactive activities that celebrate the arrival of spring. Let us take care of every detail, ensuring your Pahela Falgun event is a memorable and culturally rich experience for all attendees.",
+      "price": 1800,
+      "services_offered": [
+        "Event Planning and Coordination",
+        "Venue Selection and Decor",
+        "Cultural Performances and Entertainment",
+        "Cultural Food and Beverage Services",
+        "Thematic Decor and Lighting",
+        "Interactive Workshops"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Durga Puja",
+      "img": "https://i.ibb.co/qRvsfBC/puja.jpg",
+      "short_description": "Experience the grandeur of Durga Puja with our event services. From vibrant decorations to cultural performances, we make your celebration memorable.",
+      "long_description": "Elevate your Durga Puja celebration with our comprehensive event services. We bring the essence of this auspicious festival to life, offering meticulous event planning, stunning thematic decor, captivating cultural performances, delectable traditional cuisine, and everything you need to create a memorable and spiritually enriching experience. Let us handle the details while you immerse yourself in the festivities and devotion of Durga Puja.",
+      "price": 2500,
+      "services_offered": [
+        "Event Planning and Coordination",
+        "Venue Selection and Setup",
+        "Thematic Decor and Lighting",
+        "Live Music and Samba Performances",
+        "Food and Beverage Services",
+        "Costume Rentals"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Book Fair",
+      "img": "https://i.ibb.co/nfL5PwG/book-fair.jpg",
+      "short_description": "Book fair services: Organize and promote vibrant book fairs, featuring authors, publishers, workshops, and cultural experiences.",
+      "long_description": "Our book fair services encompass the complete event planning and management, from inviting renowned authors and publishers to curating engaging workshops. We create an immersive cultural experience around books, fostering a love for reading and learning among attendees. Let us bring your literary vision to life.",
+      "price": 1500,
+      "services_offered": [
+        "Event Planning and Coordination",
+        "Venue Selection and Setup",
+        "Author and Publisher Invitations",
+        "Workshop Curation",
+        "Cultural Book Fair Exhibitions",
+        "Interactive Activities"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Holi Celebration",
+      "img": "https://i.ibb.co/n1pJ6tW/fest.jpg",
+      "short_description": "Add color to your Holi party with our event coordination, color supply, music, and delicious snacks.",
+      "long_description": "Make your Holi celebration a riot of colors and fun! Our services include event coordination, safe and vibrant color supplies, live music, traditional dance, and a delectable menu of Holi snacks and beverages. Let us turn your Holi gathering into an unforgettable and colorful experience.",
+      "price": 1200,
+      "services_offered": [
+        "Event Planning and Coordination",
+        "Color Supply and Coordination",
+        "Live Music and Entertainment",
+        "Traditional Dance Performances",
+        "Catering Services",
+        "Holi Snacks and Beverages"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "New Year's Eve (31st Night)",
+      "img": "https://i.ibb.co/s1yrZqR/534564-PJRL6-A-362.jpg",
+      "short_description": "Ring in the New Year with our event planning expertise. We ensure a memorable 31st night celebration!",
+      "long_description": "Countdown to the New Year with our expert event planning and coordination. From venue selection and stunning decor to live entertainment, catering, and a midnight fireworks display, we'll make your 31st night celebration unforgettable. Let's welcome the future together!",
+      "price": 2800,
+      "services_offered": [
+        "Event Planning and Coordination",
+        "Venue Selection and Setup",
+        "Thematic Decor and Lighting",
+        "Live Music and Entertainment",
+        "Catering Services",
+        "Fireworks Display"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Christmas Celebration",
+      "img": "https://i.ibb.co/TBMzSnb/chrismas.jpg",
+      "short_description": "Create a magical Christmas event with our expert planning, decor, and entertainment services. Make this holiday unforgettable.",
+      "long_description": "Elevate your Christmas celebration with our comprehensive event services. From venue selection to festive decor, entertainment, and catering, we'll ensure your event is filled with joy and the spirit of the season. Let us handle the details so you can cherish the moments.",
+      "price": 2200,
+      "services_offered": [
+        "Event Planning and Coordination",
+        "Venue Selection and Decor",
+        "Festive Decor and Lighting",
+        "Live Music and Entertainment",
+        "Catering Services",
+        "Holiday-themed Activities"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Victory Day",
+      "img": "https://i.ibb.co/RDNTPV4/victory.jpg",
+      "short_description": "Comprehensive Victory Day event services, from planning to execution, honoring historical triumphs with pride.",
+      "long_description": "Elevate your Victory Day celebrations with our expert event services. We specialize in planning, coordination, and execution, ensuring every detail is flawlessly arranged. From selecting the perfect venue to arranging cultural performances, we create a solemn and memorable atmosphere to commemorate historical triumphs. Our services encompass thematic decor, patriotic music, guest speakers, and more, paying tribute to the heroes who made victory possible. Join us in honoring the past with pride and unity, making your Victory Day celebration truly exceptional.",
+      "price": 1800,
+      "services_offered": [
+        "Event Planning and Coordination",
+        "Venue Selection and Setup",
+        "Thematic Decor and Lighting",
+        "Cultural Performances",
+        "Memorial Services",
+        "Security and Safety Measures"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Cultural Fest",
+      "img": "https://i.ibb.co/4tXppFY/fest.png",
+      "short_description": "Comprehensive event planning and coordination to create culturally rich celebrations. Let us bring your cultural festival to life!",
+      "long_description": "Experience the magic of cultural festivals with our expert event planning and coordination services. From venue selection and thematic decor to captivating cultural performances, we specialize in crafting immersive celebrations that showcase the beauty, traditions, and diversity of cultures from around the world. Let us transform your cultural festival into a memorable and authentic experience, where attendees can immerse themselves in the richness of heritage, music, dance, cuisine, and art. We handle every detail, ensuring your festival resonates with the spirit of cultural unity and celebration.",
+      "price": 2500,
+      "services_offered": [
+        "Event Planning and Coordination",
+        "Venue Selection and Setup",
+        "Thematic Decor and Lighting",
+        "Cultural Performances and Entertainment",
+        "Traditional Food and Beverage Services",
+        "Interactive Workshops"
+      ]
+    }
+  ]
+  
