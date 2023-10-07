@@ -8,9 +8,9 @@ const Navbar = () => {
 
     const [open, setOpen] = useState(false)
     return (
-        <div className="flex justify-between py-6 items-center">
+        <div className="flex justify-between py-6 items-center lg:absolute lg:z-20 lg:gap-[700px] lg:ml-32">
             <div className="">
-                <h1 className="text-black text-3xl">Festive<span className="text-orange-600">Fusion</span></h1>
+                <h1 className="text-white text-3xl">Festive<span className="text-[#43ba7f]">Fusion</span></h1>
             </div>
             <div className="">
                 <div className="md:hidden text-2xl mr-8 mt-5" onClick={() => setOpen(!open)}>
@@ -18,9 +18,9 @@ const Navbar = () => {
                         open === true ? <AiOutlineClose></AiOutlineClose> : <AiOutlineMenu></AiOutlineMenu>
                     }
                 </div>
-                <nav className={`absolute bg-white lg:bg-transparent md:block z-50 md:static px-5 ${open ? 'right-1' : '-right-72'} ${open ? 'block' : 'hidden'}`}>
+                <nav className={`absolute bg-white z-50 lg:bg-transparent md:block md:static px-5 ${open ? 'right-1' : '-right-72'} ${open ? 'block' : 'hidden'}`}>
                     <div className="flex flex-col md:flex-row gap-10 items-center">
-                        <ul className="flex flex-col md:flex-row gap-5">
+                        <ul className="flex flex-col md:flex-row gap-5 lg:text-white">
                             <li>
                                 <NavLink to="/">Home</NavLink>
                             </li>
@@ -33,7 +33,7 @@ const Navbar = () => {
                             </li>
                         </ul>
                         <button
-                            className="bg-orange-600 text-white px-5 py-2 rounded-md"
+                            className="bg-[#43ba7f] text-white px-5 py-2 rounded-md"
                             type="button"
                             data-ripple-light="true"
                         >

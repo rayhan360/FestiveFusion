@@ -1,11 +1,12 @@
 import Navbar from "../Navbar/Navbar";
+import Banner from "./banner";
 
 
 const Home = () => {
     return (
-        <div className="max-w-6xl mx-auto">
+        <div>
             <Navbar></Navbar>
-            <h1 className="text-blue-700">hello henda</h1>
+            <Banner></Banner>
         </div>
     );
 };
