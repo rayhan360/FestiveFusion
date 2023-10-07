@@ -10,7 +10,7 @@ const Navbar = () => {
     return (
         <div className="flex justify-between py-6 items-center lg:absolute lg:z-20 lg:gap-[700px] lg:ml-32">
             <div className="">
-                <h1 className="text-white text-3xl">Festive<span className="text-[#43ba7f]">Fusion</span></h1>
+                <h1 className="lg:text-white text-3xl">Festive<span className="text-[#43ba7f]">Fusion</span></h1>
             </div>
             <div className="">
                 <div className="md:hidden text-2xl mr-8 mt-5" onClick={() => setOpen(!open)}>
