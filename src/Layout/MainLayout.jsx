@@ -3,6 +3,7 @@ import 'aos/dist/aos.css';
 import AOS from 'aos';
 import { useEffect } from "react";
 import Footer from "../Footer/Footer";
+import Navbar from "../Navbar/Navbar";
 const MainLayout = () => {
 
     useEffect(() => {
@@ -14,6 +15,7 @@ const MainLayout = () => {
 
     return (
         <div>
+            <Navbar></Navbar>
             <Outlet></Outlet>
             <Footer></Footer>
         </div>

@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
-
+import { Link } from "react-router-dom"
 const SignleEvent = ({ card }) => {
     // console.log(card);
-    const { name, img, short_description, price, price2 } = card;
+    const { id, name, img, short_description, price, price2 } = card;
     return (
         <div>
             <div className="relative flex w-full max-w-[26rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg">
@@ -21,7 +21,7 @@ const SignleEvent = ({ card }) => {
                         </h5>
                     </div>
                     <p className="block flex-grow font-sans text-base font-light leading-relaxed text-gray-700 antialiased mb-3">
-                       {short_description}
+                        {short_description}
                     </p>
                     <hr />
                     <div className='mt-3'>
@@ -41,13 +41,15 @@ const SignleEvent = ({ card }) => {
                     </div>
                 </div>
                 <div className="p-6 pt-3">
-                    <button
-                        className="block w-full select-none rounded-lg bg-[#43ba7f] py-3.5 px-7 text-center align-middle font-sans text-sm font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-                        type="button"
-                        data-ripple-light="true"
-                    >
-                        view all details
-                    </button>
+                    <Link to={`/eventDetails/${id}`}>
+                        <button
+                            className="block w-full select-none rounded-lg bg-[#43ba7f] py-3.5 px-7 text-center align-middle font-sans text-sm font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                            type="button"
+                            data-ripple-light="true"
+                        >
+                            view all details
+                        </button>
+                    </Link>
                 </div>
             </div>
         </div>

@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import "./Navbar.css"
 import { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
@@ -32,13 +32,15 @@ const Navbar = () => {
                                 <NavLink to="/Contact">Contact</NavLink>
                             </li>
                         </ul>
-                        <button
-                            className="bg-[#43ba7f] text-white px-5 py-2 rounded-md"
-                            type="button"
-                            data-ripple-light="true"
-                        >
-                            <span>Log In</span>
-                        </button>
+                        <Link to="/login">
+                            <button
+                                className="bg-[#43ba7f] text-white px-5 py-2 rounded-md"
+                                type="button"
+                                data-ripple-light="true"
+                            >
+                                Log in
+                            </button>
+                        </Link>
                     </div>
 
                 </nav>
