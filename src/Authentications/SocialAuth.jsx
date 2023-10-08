@@ -1,15 +1,19 @@
 import { FaGoogle, FaTwitter, FaGithub } from "react-icons/fa";
 import { useContext } from "react"
 import { AuthContext } from "../AuthProvider/AuthProvider";
-
+import toast, { Toaster } from 'react-hot-toast';
+import { useNavigate } from "react-router-dom";
 
 const SocialAuth = () => {
     const { googleSignIn } = useContext(AuthContext)
+    const navigate = useNavigate()
 
     const socialMediaSingIn = media => {
         media()
             .then(result => {
                 console.log(result.user)
+                toast.success("user logged in successful")
+                navigate("/")
             })
             .catch(error => {
                 console.log(error)
@@ -22,6 +26,7 @@ const SocialAuth = () => {
                 <button><FaGithub className="text-3xl"></FaGithub></button>
                 <button><FaTwitter className="text-3xl"></FaTwitter></button>
             </div>
+            <Toaster></Toaster>
         </div>
     );
 };
