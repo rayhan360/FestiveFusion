@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 import gif from "../assets/login.gif"
 import "./authentication.css"
+import SocialAuth from "./SocialAuth";
 const LogIn = () => {
     return (
         <div className="bg-set" >
@@ -62,6 +63,8 @@ const LogIn = () => {
                             Sign In
                         </button>
                     </form>
+                   
+                    <SocialAuth></SocialAuth>
                     <p className="mt-4 block text-center font-sans text-base font-normal leading-relaxed text-gray-700 antialiased">
                         Do not have an account?
                         <Link to="/registration"

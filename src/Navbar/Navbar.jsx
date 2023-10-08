@@ -1,10 +1,12 @@
 import { NavLink, Link } from "react-router-dom";
 import "./Navbar.css"
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
+import { AuthContext } from "../AuthProvider/AuthProvider";
 
 
 const Navbar = () => {
+    const { user } = useContext(AuthContext)
 
     const [open, setOpen] = useState(false)
     return (
@@ -32,15 +34,38 @@ const Navbar = () => {
                                 <NavLink to="/Contact">Contact</NavLink>
                             </li>
                         </ul>
-                        <Link to="/login">
-                            <button
-                                className="bg-[#43ba7f] text-white px-5 py-2 rounded-md"
-                                type="button"
-                                data-ripple-light="true"
-                            >
-                                Log in
-                            </button>
-                        </Link>
+                        <div>
+                            {
+                                user ? <div className="dropdown dropdown-end">
+                                    <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+                                        <div className="w-10 rounded-full">
+                                            <img src={user.photoURL} alt={user.displayName} />
+                                        </div>
+                                    </label>
+                                    <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                                        <li>
+                                            <button className="">{user.displayName}</button>
+
+                                        </li>
+                                        <li>
+                                            <button className="btn btn-sm btn-accent text-white"
+                                            >Sign Out</button>
+
+                                        </li>
+                                    </ul>
+                                </div>
+                                    :
+                                    <Link to="/login">
+                                        <button
+                                            className="bg-[#43ba7f] text-white px-5 py-2 rounded-md"
+                                            type="button"
+                                            data-ripple-light="true"
+                                        >
+                                            Sign In
+                                        </button>
+                                    </Link>
+                            }
+                        </div>
                     </div>
 
                 </nav>

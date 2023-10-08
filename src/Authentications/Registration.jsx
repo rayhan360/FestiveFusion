@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 import signUp from "../assets/signup.gif"
 import "./authentication.css"
+import SocialAuth from "./SocialAuth";
 
 const Registration = () => {
     return (
@@ -83,6 +84,7 @@ const Registration = () => {
                             Sign up
                         </button>
                     </form>
+                    <SocialAuth></SocialAuth>
                     <p className="mt-4 block text-center font-sans text-base font-normal leading-relaxed text-gray-700 antialiased">
                         Already have an account? please 
                         <Link to="/login"
