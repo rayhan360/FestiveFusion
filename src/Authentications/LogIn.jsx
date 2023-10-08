@@ -31,8 +31,10 @@ const LogIn = () => {
                     toast.error('Incorrect password. Please try again.');
                 } else if (error.code === 'auth/user-not-found') {
                     toast.error('User not found. Please check your email.');
+                } else if (error.code === 'auth/invalid-login-credentials') {
+                    toast.error('Invalid login credentials. Please double-check your email and password.');
                 } else {
-                    toast.error('your information is wrong please check it and try again.');
+                    toast.error('An error occurred. Please try again later.');
                 }
             })
     }

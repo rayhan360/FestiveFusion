@@ -2,6 +2,7 @@
 import { useEffect } from "react";
 import Event from "./Event/Event";
 import Banner from "./banner";
+import Gallery from "./Gallery/Gallery";
 
 
 const Home = () => {
@@ -13,6 +14,7 @@ const Home = () => {
             {/* <Navbar></Navbar> */}
             <Banner></Banner>
             <Event></Event>
+            <Gallery></Gallery>
         </div>
     );
 };
