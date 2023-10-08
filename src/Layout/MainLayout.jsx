@@ -4,6 +4,7 @@ import AOS from 'aos';
 import { useEffect } from "react";
 import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar";
+import { Toaster } from 'react-hot-toast';
 const MainLayout = () => {
 
     useEffect(() => {
@@ -18,6 +19,7 @@ const MainLayout = () => {
             <Navbar></Navbar>
             <Outlet></Outlet>
             <Footer></Footer>
+            <Toaster></Toaster>
         </div>
     );
 };

@@ -6,7 +6,7 @@ import { AuthContext } from "../AuthProvider/AuthProvider";
 
 
 const Navbar = () => {
-    const { user } = useContext(AuthContext)
+    const { user, logOut } = useContext(AuthContext)
 
     const [open, setOpen] = useState(false)
     return (
@@ -36,34 +36,47 @@ const Navbar = () => {
                         </ul>
                         <div>
                             {
-                                user ? <div className="dropdown dropdown-end">
-                                    <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-                                        <div className="w-10 rounded-full">
-                                            <img src={user.photoURL} alt={user.displayName} />
+                                user ?
+                                    <div className=" flex items-center gap-3">
+                                        <div className="dropdown dropdown-end">
+                                            <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+                                                <div className="w-10 rounded-full">
+                                                    <img src={user.photoURL} alt={user.displayName} />
+                                                </div>
+                                            </label>
+                                            <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                                                <li>
+                                                    <button className="">{user.displayName}</button>
+                                                </li>
+                                                <li><button>{user.email}</button></li>
+                                            </ul>
                                         </div>
-                                    </label>
-                                    <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                                        <li>
-                                            <button className="">{user.displayName}</button>
-
-                                        </li>
-                                        <li>
-                                            <button className="btn btn-sm btn-accent text-white"
+                                        <div>
+                                            <button onClick={logOut} className="btn btn-md btn-accent text-white"
                                             >Sign Out</button>
-
-                                        </li>
-                                    </ul>
-                                </div>
+                                        </div>
+                                    </div>
                                     :
-                                    <Link to="/login">
-                                        <button
-                                            className="bg-[#43ba7f] text-white px-5 py-2 rounded-md"
-                                            type="button"
-                                            data-ripple-light="true"
-                                        >
-                                            Sign In
-                                        </button>
-                                    </Link>
+                                    <div className="mb-5 md:mb-0">
+                                        <Link to="/login">
+                                            <button
+                                                className="bg-[#43ba7f] text-white px-5 py-2 rounded-md"
+                                                type="button"
+                                                data-ripple-light="true"
+                                            >
+                                                Sign In
+                                            </button>
+                                        </Link>
+                                        <Link to="/registration">
+                                            <button
+                                                className="bg-[#43ba7f] text-white px-5 py-2 rounded-md ml-3"
+                                                type="button"
+                                                data-ripple-light="true"
+                                            >
+                                                Sign Up
+                                            </button>
+                                        </Link>
+                                    </div>
                             }
                         </div>
                     </div>
