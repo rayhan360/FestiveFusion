@@ -13,7 +13,10 @@
         "Thematic Decor and Lighting",
         "Live Music and Dance Performances",
         "Catering Services",
-        "Fireworks Display"
+        "Fireworks Display",
+        "Cultural Food and Beverage Services",
+        "Guest Speaker Arrangements",
+        "Cultural Exhibitions"
       ]
     },
     {
@@ -30,7 +33,10 @@
         "Cultural Performances and Entertainment",
         "Cultural Food and Beverage Services",
         "Thematic Decor and Lighting",
-        "Interactive Workshops"
+        "Interactive Workshops",
+        "Traditional Attire and Costume Rentals",
+        "Artisan and Craft Stalls",
+        "Spring-themed Merchandise"
       ]
     },
     {
@@ -43,11 +49,14 @@
       "price2": 3500,
       "services_offered": [
         "Event Planning and Coordination",
+        "Pandal Lighting and Sound Systems",
         "Venue Selection and Setup",
         "Thematic Decor and Lighting",
         "Live Music and Samba Performances",
         "Food and Beverage Services",
-        "Costume Rentals"
+        "Costume Rentals",
+        "Catering Services",
+        "Event Merchandise"
       ]
     },
     {
@@ -64,7 +73,10 @@
         "Author and Publisher Invitations",
         "Workshop Curation",
         "Cultural Book Fair Exhibitions",
-        "Interactive Activities"
+        "Interactive Activities",
+        "Book Launches and Releases",
+        "Children's Corner",
+        "Security and Safety Measures"
       ]
     },
     {
@@ -81,7 +93,10 @@
         "Live Music and Entertainment",
         "Traditional Dance Performances",
         "Catering Services",
-        "Holi Snacks and Beverages"
+        "Holi Snacks and Beverages",
+        "Cultural Entertainment Booking",
+        "Live DJ and Dance Floor",
+        "Thematic Photo Booths"
       ]
     },
     {
@@ -98,7 +113,10 @@
         "Thematic Decor and Lighting",
         "Live Music and Entertainment",
         "Catering Services",
-        "Fireworks Display"
+        "Fireworks Display",
+        "Party Favors and Swag Bags",
+        "Midnight Balloon Drop",
+        "Live Streaming and Virtual Participation"
       ]
     },
     {
@@ -114,8 +132,11 @@
         "Venue Selection and Decor",
         "Festive Decor and Lighting",
         "Live Music and Entertainment",
-        "Catering Services",
-        "Holiday-themed Activities"
+        "Christmas Dinner and Catering",
+        "Holiday-themed Activities",
+        "Christmas Gift Exchange",
+        "Themed Parties and Zones",
+        "Santa Run or Charity Walk"
       ]
     },
     {
@@ -132,7 +153,11 @@
         "Thematic Decor and Lighting",
         "Cultural Performances",
         "Memorial Services",
-        "Security and Safety Measures"
+        "Security and Safety Measures",
+        "Guest Speaker Arrangements",
+        "Historical Exhibitions",
+        "Flag Hoisting and National Anthem"
+
       ]
     },
     {
@@ -149,7 +174,10 @@
         "Thematic Decor and Lighting",
         "Cultural Performances and Entertainment",
         "Traditional Food and Beverage Services",
-        "Interactive Workshops"
+        "Interactive Workshops",
+        "Cultural Workshops",
+        "Guest Speaker Arrangements",
+        "Traditional Music and Dance Performances"
       ]
     }
   ]
