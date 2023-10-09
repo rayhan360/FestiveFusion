@@ -18,6 +18,10 @@ const FestivalSecret = () => {
             .then(data => setEventCard(data))
     }, [])
 
+    useEffect(()=> {
+        window.scrollTo(0,0)
+    },[])
+
     return (
         <section className="">
             {/* Background Image */}
