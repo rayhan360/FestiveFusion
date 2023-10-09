@@ -6,7 +6,6 @@ import "./authentication.css"
 import SocialAuth from "./SocialAuth";
 import { useContext, useState } from "react";
 import { AuthContext } from "../AuthProvider/AuthProvider";
-// import swal from 'sweetalert';
 import toast, { Toaster } from 'react-hot-toast';
 import { updateProfile } from "firebase/auth";
 const Registration = () => {

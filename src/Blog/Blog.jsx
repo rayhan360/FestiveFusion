@@ -34,12 +34,30 @@ const Blog = () => {
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-4 max-w-7xl mx-auto mt-20 gap-10">
-                <div className="md:col-span-3 grid grid-cols-2 gap-3">
+                <div className="md:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-3">
                     {currentPosts.map((post) => (
                         <BlogDetails key={post.id} post={post}></BlogDetails>
                     ))}
+                    <div className="text-center my-5 md:col-span-2">
+                        {currentPage > 1 && (
+                            <button
+                                onClick={() => setCurrentPage(currentPage - 1)}
+                                className="bg-[#43ba7f] text-white px-4 py-2 rounded-md mx-2"
+                            >
+                                Previous
+                            </button>
+                        )}
+                        {currentPosts.length === postsPerPage && (
+                            <button
+                                onClick={() => setCurrentPage(currentPage + 1)}
+                                className="bg-[#43ba7f] text-white px-4 py-2 rounded-md mx-2"
+                            >
+                                Next
+                            </button>
+                        )}
+                    </div>
                 </div>
-                <div>
+                <div className="">
                     <h1 className="text-2xl font-bold mb-7">Popular blog</h1>
                     <hr />
                     <div className="mt-3">
@@ -50,24 +68,7 @@ const Blog = () => {
                 </div>
             </div>
 
-            <div className="text-center my-5">
-                {currentPage > 1 && (
-                    <button
-                        onClick={() => setCurrentPage(currentPage - 1)}
-                        className="bg-[#43ba7f] text-white px-4 py-2 rounded-md mx-2"
-                    >
-                        Previous
-                    </button>
-                )}
-                {currentPosts.length === postsPerPage && (
-                    <button
-                        onClick={() => setCurrentPage(currentPage + 1)}
-                        className="bg-[#43ba7f] text-white px-4 py-2 rounded-md mx-2"
-                    >
-                        Next
-                    </button>
-                )}
-            </div>
+
 
             {/* upload section */}
             <section className="contact bg-contact-bg bg-cover bg-center bg-fixed">

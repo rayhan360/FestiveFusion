@@ -17,7 +17,7 @@ const Event = () => {
             </div>
             <div data-aos="fade-right" data-aos-duration="8000" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:ml-10">
                 {
-                    eventCard.map(card => <SignleEvent key={card.id} card={card}></SignleEvent>)
+                    eventCard.slice(0,6).map(card => <SignleEvent key={card.id} card={card}></SignleEvent>)
                 }
             </div>
         </div>

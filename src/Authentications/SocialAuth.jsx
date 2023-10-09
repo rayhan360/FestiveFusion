@@ -5,7 +5,7 @@ import toast, { Toaster } from 'react-hot-toast';
 import { useLocation, useNavigate } from "react-router-dom";
 
 const SocialAuth = () => {
-    const { googleSignIn } = useContext(AuthContext)
+    const { googleSignIn, gitHubSignIn } = useContext(AuthContext)
     const navigate = useNavigate()
     const location = useLocation()
 
@@ -24,7 +24,7 @@ const SocialAuth = () => {
         <div>
             <div className="flex justify-evenly mt-5">
                 <button onClick={()=> socialMediaSingIn(googleSignIn)}><FaGoogle className="text-3xl"></FaGoogle></button>
-                <button><FaGithub className="text-3xl"></FaGithub></button>
+                <button onClick={()=> socialMediaSingIn(gitHubSignIn)}><FaGithub className="text-3xl"></FaGithub></button>
                 <button><FaTwitter className="text-3xl"></FaTwitter></button>
             </div>
             <Toaster></Toaster>

@@ -7,6 +7,7 @@ import Registration from "../Authentications/Registration";
 import ErrorPage from "../ErrorPage/ErrorPage";
 import PrivateRouter from "./PrivateRouter";
 import Blog from "../Blog/Blog";
+import FestivalSecret from "../FestivalSecret/FestivalSecret";
 
 
 const Router = createBrowserRouter([
@@ -35,6 +36,10 @@ const Router = createBrowserRouter([
             {
                 path: "/blog",
                 element: <PrivateRouter><Blog></Blog></PrivateRouter>
+            },
+            {
+                path: "/ourFestival",
+                element: <PrivateRouter><FestivalSecret></FestivalSecret></PrivateRouter>
             }
         ]
     }
