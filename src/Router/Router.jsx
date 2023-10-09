@@ -6,6 +6,7 @@ import LogIn from "../Authentications/LogIn";
 import Registration from "../Authentications/Registration";
 import ErrorPage from "../ErrorPage/ErrorPage";
 import PrivateRouter from "./PrivateRouter";
+import Blog from "../Blog/Blog";
 
 
 const Router = createBrowserRouter([
@@ -30,6 +31,10 @@ const Router = createBrowserRouter([
             {
                 path: "/registration",
                 element: <Registration></Registration>
+            },
+            {
+                path: "/blog",
+                element: <Blog></Blog>
             }
         ]
     }

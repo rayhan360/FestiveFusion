@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import Event from "./Event/Event";
 import Banner from "./banner";
 import Gallery from "./Gallery/Gallery";
+import Testimonial from "./Testimonial/Testimonial";
 
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
             <Banner></Banner>
             <Event></Event>
             <Gallery></Gallery>
+            <Testimonial></Testimonial>
         </div>
     );
 };

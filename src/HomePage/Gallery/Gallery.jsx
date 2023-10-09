@@ -9,7 +9,7 @@ const Gallery = () => {
     return (
         <div className="mb-10">
             <div className="my-10" data-aos="fade-top" data-aos-duration="1000">
-                <h1 className="text-[43ba7f] text-center text-5xl font-bold">Our Photo Gallery</h1>
+                <h1 className="text-[#43ba7f] text-center text-5xl font-bold">Our Photo Gallery</h1>
                 <p className="text-black font-semibold text-center tracking-widest mt-5">Photos of Our Previous Gallery</p>
             </div>
             <div className="box-container md:max-w-7xl md:mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
