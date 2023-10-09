@@ -2,18 +2,19 @@ import { FaGoogle, FaTwitter, FaGithub } from "react-icons/fa";
 import { useContext } from "react"
 import { AuthContext } from "../AuthProvider/AuthProvider";
 import toast, { Toaster } from 'react-hot-toast';
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const SocialAuth = () => {
     const { googleSignIn } = useContext(AuthContext)
     const navigate = useNavigate()
+    const location = useLocation()
 
     const socialMediaSingIn = media => {
         media()
             .then(result => {
                 console.log(result.user)
                 toast.success("user logged in successful")
-                navigate("/")
+                navigate(location?.state ? location.state : "/")
             })
             .catch(error => {
                 console.log(error)

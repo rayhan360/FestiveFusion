@@ -1,5 +1,5 @@
 /* eslint-disable no-useless-escape */
-import { Link, useNavigate } from "react-router-dom"
+import { Link, useLocation, useNavigate } from "react-router-dom"
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import signUp from "../assets/signup.gif"
 import "./authentication.css"
@@ -15,6 +15,7 @@ const Registration = () => {
     // context
     const { createUser } = useContext(AuthContext)
     const navigate = useNavigate()
+    const location = useLocation()
 
     const handleRegistration = (e) => {
         e.preventDefault()
@@ -51,16 +52,20 @@ const Registration = () => {
                 // swal("Login Successful", "Welcome back!", "success");
                 toast.success("user log in successful")
                 e.target.reset;
-
+                
                 // update profile
                 updateProfile(result.user, {
                     displayName: name,
                     photoURL: photo
                 })
-                navigate("/")
+                navigate(location?.state ? location.state : "/")
+                window.location.reload()
             })
             .catch(error => {
                 console.log(error.message)
+                if(error.code === "auth/email-already-in-use"){
+                    toast.error("email already in use")
+                }
             })
 
 

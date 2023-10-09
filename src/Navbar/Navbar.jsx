@@ -1,4 +1,4 @@
-import { NavLink, Link } from "react-router-dom";
+import { NavLink, Link, useLocation } from "react-router-dom";
 import "./Navbar.css"
 import { useState, useContext } from "react";
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
@@ -7,12 +7,19 @@ import { AuthContext } from "../AuthProvider/AuthProvider";
 
 const Navbar = () => {
     const { user, logOut } = useContext(AuthContext)
+    const location = useLocation()
+
+    const navColor = (path) => {
+        return location.pathname=== path;
+    }
+
+    const blogRoute = navColor("/blog")
 
     const [open, setOpen] = useState(false)
     return (
         <div className="flex justify-between py-6 items-center lg:absolute lg:z-20 lg:gap-[700px] lg:ml-32">
             <div className="">
-                <h1 className="lg:text-white text-3xl">Festive<span className="text-[#43ba7f]">Fusion</span></h1>
+                <h1 className={`lg:${blogRoute ? "text-black": "text-white"} text-3xl`}>Festive<span className="text-[#43ba7f]">Fusion</span></h1>
             </div>
             <div className="">
                 <div className="md:hidden text-2xl mr-8 mt-5" onClick={() => setOpen(!open)}>
@@ -22,7 +29,7 @@ const Navbar = () => {
                 </div>
                 <nav className={`absolute bg-white z-50 lg:bg-transparent md:block md:static px-5 ${open ? 'right-1' : '-right-72'} ${open ? 'block' : 'hidden'}`}>
                     <div className="flex flex-col md:flex-row gap-10 items-center">
-                        <ul className="flex flex-col md:flex-row gap-5 lg:text-white">
+                        <ul className={`flex flex-col md:flex-row gap-5 lg:${blogRoute ? "text-black" : "text-white"}`}>
                             <li>
                                 <NavLink to="/">Home</NavLink>
                             </li>
