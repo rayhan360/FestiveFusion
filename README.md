@@ -40,7 +40,7 @@ Festive Fusion is an immersive Event Management Platform, crafted with creativit
 
 1. Clone the client repository:
    ```bash
-   git clone https://github.com/rayhan360/Event-Organization.git
+   git clone https://github.com/rayhan360/FestiveFusion.git
    Install client dependencies:
-    cd festive-fusion-client
-    npm install
+    cd festive-fusion-client 
+    npm install
